@@ -4,17 +4,17 @@ var argv = require('optimist').argv;
 var filendir = require('filendir');
 var pathType = require('path-type');
 var camel = require('./camel');
-var jsContentMain = require('./js-content-main');
-var jsContentActions = require('./js-content-actions');
-var jsContentReducer = require('./js-content-reducer');
-var jsContentBootstrap = require('./js-content-bootstrap');
-var jsContentCombinedReducers = require('./js-content-combined-reducers');
-var jsContentMainStateless = require('./js-content-main-stateless');
-var scssContent = require('./scss-content');
-var jsTestMain = require('./js-test-main');
-var jsTestMainStateless = require('./js-test-main-stateless');
-var jsTestReducers = require('./js-test-reducers');
-var jsTestActions = require('./js-test-actions');
+var jsContentMain = require('./templates/js-content-main');
+var jsContentActions = require('./templates/js-content-actions');
+var jsContentReducer = require('./templates/js-content-reducer');
+var jsContentBootstrap = require('./templates/js-content-bootstrap');
+var jsContentCombinedReducers = require('./templates/js-content-combined-reducers');
+var jsContentMainStateless = require('./templates/js-content-main-stateless');
+var scssContent = require('./templates/scss-content');
+var jsTestMain = require('./templates/js-test-main');
+var jsTestMainStateless = require('./templates/js-test-main-stateless');
+var jsTestReducers = require('./templates/js-test-reducers');
+var jsTestActions = require('./templates/js-test-actions');
 
 if (argv.c === true || argv.c === undefined || argv.c === null) {
   console.log('Component name is mandatory');
@@ -46,7 +46,7 @@ pathType.dir(argv.c).then(function () {
   if (argv.b) {
     // Bootstrap
     filendir.ws(dirPathName + '/hwrld-' + argv.c + '.js', jsContentBootstrap(compTitle, argv.c));
-    filendir.ws(dirPathName + '/' + argv.c + '-combined-reducers.js', jsContentCombinedReducers(compTitle));
+    filendir.ws(dirPathName + '/' + argv.c + '-combined-reducers.js', jsContentCombinedReducers(compTitle, compCamel, argv.c));
   }
 
   // Styles
