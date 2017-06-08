@@ -45,7 +45,7 @@ pathType.dir(argv.c).then(function () {
 
   if (argv.b) {
     // Bootstrap
-    filendir.ws(dirPathName + '/hwrld-' + argv.c + '.js', jsContentBootstrap(compTitle, argv.c));
+    filendir.ws(dirPathName + '/entry-' + argv.c + '.js', jsContentBootstrap(compTitle, argv.c));
     filendir.ws(dirPathName + '/' + argv.c + '-combined-reducers.js', jsContentCombinedReducers(compTitle, compCamel, argv.c));
   }
 
