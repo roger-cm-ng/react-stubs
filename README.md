@@ -1,13 +1,13 @@
-gen-react-stubs
+stubs-react
 ===============
 
 ###npm install gen-react-stubs -g
 
 ####Stateless component
-gen-react-stubs `--`c `<`component-name`>` `--`s
+stubs-react `--`c `<`component-name`>` `--`s
 
 ####Redux component
-gen-react-stubs `--`c `<`component-name`>`
+stubs-react `--`c `<`component-name`>`
 
 ####Bootstrap component
-gen-react-stubs `--`c `<`component-name`>` `--`b
+stubs-react `--`c `<`component-name`>` `--`b
