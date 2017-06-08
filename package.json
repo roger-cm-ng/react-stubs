@@ -1,7 +1,19 @@
 {
+  "name": "stubs-react",
+  "version": "0.0.1",
+  "preferGlobal": true,
   "bin": {
-    "gen-react-stubs": "index.js"
+    "stubs-react": "index.js"
   },
+  "description": "Generate React stubs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Roger Ng"
+  },
+  "license": "ISC",
   "dependencies": {
     "babel-register": "^6.22.0",
     "filendir": "^1.0.0",
@@ -9,23 +21,5 @@
     "optimist": "^0.6.1",
     "path-type": "^1.1.0",
     "titlecase": "^1.1.2"
-  },
-  "description": "Generate react component stubs",
-  "devDependencies": {},
-  "directories": {},
-  "main": "index.js",
-  "maintainers": [
-    {
-      "name": "roger-cm-ng",
-      "email": "roger@creativexcitant.com"
-    }
-  ],
-  "name": "gen-react-stubs",
-  "optionalDependencies": {},
-  "preferGlobal": true,
-  "readme": "ERROR: No README data found!",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "0.0.1"
+  }
 }
