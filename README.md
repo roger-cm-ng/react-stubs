@@ -1,7 +1,7 @@
 stubs-react
 ===============
 
-###npm install gen-react-stubs -g
+###npm install stubs-react -g
 
 ####Stateless component
 stubs-react `--`c `<`component-name`>` `--`s
