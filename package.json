@@ -1,0 +1,86 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "gen-react-stubs",
+        "scope": null,
+        "escapedName": "gen-react-stubs",
+        "name": "gen-react-stubs",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\Roger Ng\\Documents\\personal-projects"
+    ]
+  ],
+  "_from": "gen-react-stubs@latest",
+  "_id": "gen-react-stubs@0.1.1",
+  "_inCache": true,
+  "_location": "/gen-react-stubs",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/gen-react-stubs-0.1.1.tgz_1485810870262_0.601754714967683"
+  },
+  "_npmUser": {
+    "name": "roger-cm-ng",
+    "email": "roger@creativexcitant.com"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "gen-react-stubs",
+    "scope": null,
+    "escapedName": "gen-react-stubs",
+    "name": "gen-react-stubs",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/gen-react-stubs/-/gen-react-stubs-0.1.1.tgz",
+  "_shasum": "6b179ed833c3648771f85ad176510e81295f6a15",
+  "_shrinkwrap": null,
+  "_spec": "gen-react-stubs",
+  "_where": "C:\\Users\\Roger Ng\\Documents\\personal-projects",
+  "author": {
+    "name": "Roger Ng"
+  },
+  "bin": {
+    "gen-react-stubs": "index.js"
+  },
+  "dependencies": {
+    "babel-register": "^6.22.0",
+    "filendir": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "optimist": "^0.6.1",
+    "path-type": "^1.1.0",
+    "titlecase": "^1.1.2"
+  },
+  "description": "Generate react component stubs",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "6b179ed833c3648771f85ad176510e81295f6a15",
+    "tarball": "https://registry.npmjs.org/gen-react-stubs/-/gen-react-stubs-0.1.1.tgz"
+  },
+  "gitHead": "f54bdc9136b016c5a6ba38057cac3a0b8db243b5",
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "roger-cm-ng",
+      "email": "roger@creativexcitant.com"
+    }
+  ],
+  "name": "gen-react-stubs",
+  "optionalDependencies": {},
+  "preferGlobal": true,
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.1"
+}
