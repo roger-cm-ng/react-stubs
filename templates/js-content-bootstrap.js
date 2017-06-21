@@ -22,10 +22,10 @@ export default class Entry${compTitle} {
 	}
 
 	renderElm() {
-  	const store = createStoreWithMiddleware(
-  		${compTitle}CombinedReducers,
-  		window.devToolsExtension ? window.devToolsExtension() : f => f
-  	);
+		const store = createStoreWithMiddleware(
+			${compTitle}CombinedReducers,
+			window.devToolsExtension ? window.devToolsExtension() : f => f
+		);
 
 		ReactDom.render(
 			<Provider store={store}>
