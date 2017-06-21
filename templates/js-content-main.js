@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import '../../styles/core.scss';
 import css from './${fileName}.scss';
-import { action } from './${fileName}-actions.js';
+import { action } from './${fileName}-actions';
 
 @styleable(css)
 class ${compTitle} extends Component {

@@ -1,6 +1,6 @@
 {
   "name": "stubs-react",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "preferGlobal": true,
   "bin": {
     "stubs-react": "index.js"
