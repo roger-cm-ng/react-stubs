@@ -5,7 +5,7 @@ module.exports = function(compTitle, compCamel, fileName) {
 import ${compCamel}Reducer from './${fileName}-reducer';
 
 const ${compTitle}CombinedReducers = combineReducers({
-  ${compCamel}Reducer
+	${compCamel}Reducer
 });
 
 export default ${compTitle}CombinedReducers;
