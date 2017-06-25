@@ -13,7 +13,6 @@ import { action } from './${fileName}-actions';
 @styleable(css)
 class ${compTitle} extends Component {
   static propTypes= {
-    css: PropTypes.object,
     action: PropTypes.func,
     ${compCamel}Reducer: PropTypes.object
   };
