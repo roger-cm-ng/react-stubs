@@ -5,6 +5,7 @@ module.exports = function(compTitle, compCamel, fileName) {
 import styleable from 'react-styleable';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import PropTypes from 'prop-types';
 import '../../styles/core.scss';
 import css from './${fileName}.scss';
 import { action } from './${fileName}-actions';
@@ -12,9 +13,9 @@ import { action } from './${fileName}-actions';
 @styleable(css)
 class ${compTitle} extends Component {
   static propTypes= {
-    css: React.PropTypes.object,
-    action: React.PropTypes.func,
-    ${compCamel}Reducer: React.PropTypes.object
+    css: PropTypes.object,
+    action: PropTypes.func,
+    ${compCamel}Reducer: PropTypes.object
   };
 
   componentWillUpdate() {}
