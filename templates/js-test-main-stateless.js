@@ -1,19 +1,19 @@
 require('babel-register')();
 
 module.exports = function(compTitle, fileName) {
-  return `import React from 'react';
-import styleable from 'react-styleable';
-import '../../styles/core.scss';
-import css from './test-compo.scss';
+  return `import expect from 'expect'
+import React from 'react';
+import { mount, shallow } from 'enzyme';
+import ReactTestUtils from 'react-dom/test-utils';
+import ${compTitle} from '../${fileName}';
 
-const TestCompo = () => (
-  <div className={css.component}>
-		<h1>stateless</h1>
-  </div>
-);
+function setup() {
+  return shallow(<${compTitle} />);
+}
 
-TestCompo.propTypes = {};
+describe('<${compTitle}>', () => {
+  it('should have ', () => {
 
-export default styleable(css)(TestCompo);
-`
+  });
+});`
 }
