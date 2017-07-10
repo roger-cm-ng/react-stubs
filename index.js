@@ -32,7 +32,7 @@ pathType.dir(argv.c).then(function () {
   if (argv.s) {
     // Stateless
     filendir.ws(dirPathName + '/' + argv.c + '.js', jsContentMainStateless(compTitle, argv.c));
-    // filendir.ws(dirPathName + '/test/' + argv.c + '.spec.js', jsTestMainStateless(compTitle, argv.c));
+    filendir.ws(dirPathName + '/test/' + argv.c + '.spec.js', jsTestMainStateless(compTitle, argv.c));
   } else {
     // Redux
     filendir.ws(dirPathName + '/' + argv.c + '.js', jsContentMain(compTitle, compCamel, argv.c));
